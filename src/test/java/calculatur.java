@@ -43,7 +43,8 @@ public class calculatur {
 
          String result=driver.findElementById("com.google.android.calculator:id/result_final").getText();
         System.out.println(result); // here show the result 2700
-        Assert.assertEquals(Integer.parseInt(result),2700); // here needed to change to parseInt because the result is String
+        Assert.assertEquals(Integer.parseInt(result),2700); // here needed to casting to  parseInt because the result is String
+        driver.sendSMS("55555555","Hi Michael how are you");
 
 
 
